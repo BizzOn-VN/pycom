@@ -13,10 +13,10 @@ jQuery(document).ready(function ($) {
   //--All site
     App.Site = function(){
         var playvideo = function(){
-            $("#playvideo").click(function(){
-                $("#video1")[0].src += "?autoplay=1";
-                $(".md-displaynone").addClass("md-hide");
-            });
+            // $("#playvideo").click(function(){
+            //     $("#video1")[0].src += "?autoplay=1";
+            //     $(".md-displaynone").addClass("md-hide");
+            // });
         }
         var semaintic = function(){
             

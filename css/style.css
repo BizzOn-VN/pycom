@@ -81,7 +81,7 @@ input[type=submit] {
 .banner .logo-banner{
     display: table-cell;
     width: 20%;
-    padding-right: 3%;
+    padding-right: 2%;
     vertical-align: middle;
 }
 .banner .logo-banner img{
@@ -90,14 +90,14 @@ input[type=submit] {
 }
 .banner .left-banner{
     display: table-cell;
-    width: 48%;
+    width: 46%;
     color: #FFF;
     vertical-align: top;
-    padding-right: 3%;
+    padding-right: 2%;
 }
 .banner .right-banner{
     display: table-cell;
-    width: 32%;
+    width: 36%;
     vertical-align: middle;
 }
 .banner .left-banner .md-list{
@@ -131,22 +131,37 @@ input[type=submit] {
     color: rgb(255, 247, 1);
 }
 .banner .the-le{
-    font-size: 16px;
+    font-size: calc(3px + 1vw);
     font-weight: bold;
     line-height: 1.2;
     color: #FFF;
     text-align: center;
     background: rgb(12, 44, 91);
-    padding: 15px;
+    padding: 15px 10px;
     box-shadow: rgb(47 43 43) 0px 2px 4px 0px;
     border-radius: 5px;
-    margin-top: 20px;
+    float: left;
+    width: 63%;
+}
+.banner .taiungdung{
+    font-size: calc(3px + 1vw);
+    font-weight: bold;
+    line-height: 1.2;
+    color: #FFF;
+    text-align: center;
+    background: rgb(12, 44, 91);
+    padding: 15px 10px;
+    box-shadow: rgb(47 43 43) 0px 2px 4px 0px;
+    border-radius: 5px;
+    float: right;
+    width: 35%;
 }
 .banner .the-le-mobile{
     display: none;
 }
 .banner .the-le-desktop{
-    display: inline-block;
+    display: block;
+    margin-top: 20px;
 }
 
 .banner .right-banner{
@@ -155,10 +170,11 @@ input[type=submit] {
 }
 .banner .right-banner iframe{
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
-    height: 100%;
+    height: 50%;
     
 }
 .banner .right-banner a{
@@ -607,6 +623,11 @@ a.ctn-trainghiem{
         width: 100%;
         margin-bottom: 30px;
     }
+    .banner .right-banner iframe{
+        position: static;
+        height: 300px;
+        transform: translate(0);
+    }
     .banner .right-banner{
         display: block;
         width: 100%;
@@ -616,9 +637,13 @@ a.ctn-trainghiem{
         display: none;
     }
     .banner .the-le-mobile{
-        width: 80%;
-        display: table;
-        margin: 0 auto;
+        display: block;
+    }
+    .banner .the-le{
+        font-size: calc(10px + 1vw);
+    }
+    .banner .taiungdung{
+        font-size: calc(10px + 1vw);
     }
     .section-1 .md-content .left-content{
         float: none;
