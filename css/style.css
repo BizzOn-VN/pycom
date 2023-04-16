@@ -66,10 +66,10 @@ input[type=submit] {
     font-weight: 700;
 }
 .banner{
-    background: url(../images/bg.png) no-repeat;
-    background-size: inherit;
+    background: #4B91F1;
     position: relative;
-    padding: 50px 0px 150px 0px;
+    padding: 50px 0px;
+    margin-bottom: 100px;
 }
 .banner .bg-banner{
     position: absolute;
@@ -134,9 +134,9 @@ input[type=submit] {
     font-size: 16px;
     font-weight: bold;
     line-height: 1.2;
-    color: rgb(12, 44, 91);
+    color: #FFF;
     text-align: center;
-    background: rgb(255, 247, 1);
+    background: rgb(12, 44, 91);
     padding: 15px;
     box-shadow: rgb(47 43 43) 0px 2px 4px 0px;
     border-radius: 5px;
