@@ -67,7 +67,7 @@ input[type=submit] {
 }
 .banner{
     background: url(../images/bg.png) no-repeat;
-    background-size: cover;
+    background-size: inherit;
     position: relative;
     padding: 50px 0px 150px 0px;
 }
@@ -78,21 +78,38 @@ input[type=submit] {
     width: 100%;
     z-index: -1;
 }
-.banner .left-banner{
-    float: left;
-    width: 60%;
-    color: #FFF;
+.banner .logo-banner{
+    display: table-cell;
+    width: 20%;
+    padding-right: 3%;
+    vertical-align: middle;
+}
+.banner .logo-banner img{
+    width: 100%;
     
+}
+.banner .left-banner{
+    display: table-cell;
+    width: 48%;
+    color: #FFF;
+    vertical-align: top;
+    padding-right: 3%;
+}
+.banner .right-banner{
+    display: table-cell;
+    width: 32%;
+    vertical-align: middle;
+}
+.banner .left-banner .md-list{
+    margin-bottom: 10px;
 }
 .banner .left-banner .md-list p{
     float: right;
-    width: 93%;
+    width: 91%;
 } 
-.banner .left-banner .md-list p.text{
+.banner .left-banner .md-list img{
     float: left;
-    width: 5%;
-    background: rgb(255, 247, 1);
-    border-radius: 50% 50% 0 50%;
+    width: 7%;
 }
 
 
@@ -131,11 +148,7 @@ input[type=submit] {
 .banner .the-le-desktop{
     display: inline-block;
 }
-.banner .right-banner{
-    float: right;
-    width: 38%;
-    
-}
+
 .banner .right-banner{
     position: relative;
 
@@ -146,15 +159,21 @@ input[type=submit] {
     top: 0;
     width: 100%;
     height: 100%;
+    
 }
 .banner .right-banner a{
     display: inline-block;
     width: 100%;
+    position: relative;
 }
-a.md-hide{
+.banner .right-banner a span{
+    display: block;
+}
+span.md-hide{
     opacity: 0;
     position: relative;
     z-index: -1;
+    transition-delay: 2s;
 }
 .banner .right-banner img{
     position: relative;
@@ -336,8 +355,7 @@ p.error{
     width: 100%;
 }
 .section-2 .md-content-1 .right-content img{
-    width: 35%;
-    margin-left: 55%;
+    width: 100%;
 }
 .section-2 .md-content-1 .right-content{
     float: left;
@@ -355,13 +373,15 @@ p.error{
 }
 .section-2 .md-content-1 .left-content{
     float: right;
+    margin-right: 0%;
+    margin-left: 3%;
 }
 a.ctn-trainghiem{
     /*width: 40%;*/
     text-align: center;
     display: table;
     margin: 0 auto;
-    background: rgb(255, 152, 0);
+    background: #4B91F1;
     color: #FFF;
     box-shadow: rgb(47 43 43) 0px 2px 4px 0px;
     border-radius: 5px;
@@ -422,31 +442,16 @@ a.ctn-trainghiem{
     margin-bottom: 30px;
 }
 .section-5{
-    background: rgb(5, 30, 48);
+    background: #FFF;
     padding: 40px 0px;
 }
 .section-5 .md-title h4{
     margin-bottom: 20px;
-    padding-bottom: 30px;
-    position: relative;
-    color: #FFF;
-    font-size: calc(20px + 1vw);
 }
-.section-5 .md-title h4:after{
-    content: "";
-    position: absolute;
-    background: #FFF;
-    left: 50%;
-    bottom: 0%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
-    display: block;
-   
-}
+
 .section-5 .md-title h6{
-    color: #FFF;
-    font-size: calc(12px + 1vw);
+    color: rgb(11, 43, 91);
+    font-size: calc(7px + 1vw);
     font-weight: 700;
 }
 .section-5 .md-title span{
@@ -455,33 +460,32 @@ a.ctn-trainghiem{
 .section-5 .md-content{
     margin-bottom: 30px;
 }
-.section-5 .md-content .left-content{
-    float: left;
-    width: 50%;
+.section-5 .md-content .md-row{
+    margin-bottom: 30px;
 }
-.section-5 .md-content .left-content img{
+.section-5 .md-content p{
+    margin-bottom: 10px;
+}
+.section-5 .md-content p span{
+    font-weight: 700;
+    color: rgb(11, 43, 91);
+}
+.section-5 .md-content .md-row img{
     width: 100%;
-}
-.section-5 .md-content .right-content{
-    float: right;
-    width: 45%;
-}
-.section-5 .md-content .right-content .main-content svg{
-    float: left;
-    width: 7%;
-}
-.section-5 .md-content .right-content .main-content{
     margin-bottom: 20px;
 }
-.section-5 .md-content .right-content .main-content p{
-    float: right;
-    width: 90%;
-    text-align: justify;
-    color: #FFF;
+.section-5 .md-content .md-row .col-sm-6{
+    margin-bottom: 20px;
 }
-.section-5 .md-content .right-content .main-content p span{
-    color: rgb(255, 247, 1);
+.section-5 .md-content .md-row p{
+    font-size: calc(12px + 0.5vw);
+    margin-bottom: 0px;
+}
+.section-5 .md-content .md-title-trienkhai h4{
+    color: rgb(11, 43, 91);
+    font-size: calc(10px + 1vw);
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .footer{
@@ -572,7 +576,21 @@ a.ctn-trainghiem{
         font-size: calc(12px + 1vw);
     }
     .banner{
-        padding: 50px 0px;
+        padding: 40px 0px;
+        background-size: cover;;
+    }
+    .banner .logo-banner{
+        /*display: table;
+        margin: 0 auto;*/
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+    .banner .logo-banner img{
+        width: 40%;
+        display: table;
+        margin: 0 auto;
     }
     .md-title h4{
         font-size: calc(17px + 1vw);
@@ -584,8 +602,10 @@ a.ctn-trainghiem{
         font-size: calc(20px + 1vw);
     }
     .banner .left-banner{
+        padding: 0px;
         display: block;
         width: 100%;
+        margin-bottom: 30px;
     }
     .banner .right-banner{
         display: block;
@@ -640,8 +660,14 @@ a.ctn-trainghiem{
     .section-2 .md-content-1 .bg-sc2{
         width: 100%;
     }
-    .section-2 .md-content-1 .right-content img{
-        margin-left: 45%;
+    .section-2 .md-content-1 .left-content{
+        margin: 0px 0px 30px 0px;
+    }
+    .section-2 .md-content-1 .right-content{
+        margin-bottom: 0px;
+    }
+    .section-2 .md-content-3 .left-content{
+        margin: 0px;
     }
     .section-5 .md-content .left-content{
         float: none;
@@ -651,6 +677,12 @@ a.ctn-trainghiem{
     .section-5 .md-content .right-content{
         float: none;
         width: 100%;
+    }
+    .section-5 .md-title h6{
+        font-size: calc(10px + 1vw);
+    }
+    .section-5 .md-content .md-title-trienkhai h4{
+        font-size: calc(12px + 1vw);
     }
     .footer .md-row .md-col-1{
         display: block;

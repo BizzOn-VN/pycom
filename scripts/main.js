@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
         var playvideo = function(){
             $("#playvideo").click(function(){
                 $("#video1")[0].src += "?autoplay=1";
-                $(this).addClass("md-hide");
+                $(".md-displaynone").addClass("md-hide");
             });
         }
         var semaintic = function(){
