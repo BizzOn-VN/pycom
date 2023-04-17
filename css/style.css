@@ -490,7 +490,7 @@ a.ctn-trainghiem{
     width: 100%;
     margin-bottom: 20px;
 }
-.section-5 .md-content .md-row .col-sm-6{
+.section-5 .md-content .md-row .col-6{
     margin-bottom: 20px;
 }
 .section-5 .md-content .md-row p{
@@ -708,6 +708,15 @@ a.ctn-trainghiem{
     }
     .section-5 .md-content .md-title-trienkhai h4{
         font-size: calc(12px + 1vw);
+    }
+    .section-5 .md-content .md-row p{
+        font-size: calc(12px + 1vw);
+    }
+    .section-5 .md-content .col-12{
+        text-align: center;
+    }
+    .md-formdk{
+        width: 70%;
     }
     .footer .md-row .md-col-1{
         display: block;
