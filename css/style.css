@@ -7,12 +7,17 @@
   outline: transparent;
 }
 
+@font-face {
+  font-family: "Tahoma";
+  src: url(../fonts/Tahoma/Tahoma.woff2) format("woff2"), url(../fonts/Tahoma/Tahoma.eot) format("eot"), url(../fonts/Tahoma/Tahoma.ttf) format("ttf"), url(../fonts/Tahoma/Tahoma.woff) format("woff");
+}
+
 
 body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Tahoma";
   font-size: calc(10px + 0.5vw);
   color: #333;
   line-height: 1.5;
@@ -44,7 +49,7 @@ ul li {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
- font-family: 'Montserrat', sans-serif;
+ font-family: "Tahoma";
 }
 
 p {
@@ -294,7 +299,7 @@ span.md-hide{
     color: #000;
 }
 .md-form input::placeholder{
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Tahoma";
 }
 .md-form input[type="button"]{
     background: rgb(5, 31, 77);
@@ -304,6 +309,7 @@ span.md-hide{
     color: #FFF;
     font-size: calc(10px + 1vw);
     margin-top: 20px;
+    font-family: "Tahoma";
 }
 .md-form .ui.dropdown{
     width: 100%;
@@ -318,7 +324,7 @@ span.md-hide{
 .md-form .ui.default.dropdown:not(.button)>.text, .ui.dropdown:not(.button)>.default.text{
     color: #000;
     opacity: 0.7;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Tahoma";
 }
 .md-form .ui.upward.dropdown>.menu{
     width: 100%;
@@ -502,6 +508,7 @@ a.ctn-trainghiem{
     font-size: calc(10px + 1vw);
     font-weight: 700;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .footer{
