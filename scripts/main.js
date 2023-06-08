@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
 
   //---MAIN----
   $(function () {
-      App.Site.playvideo();
+      App.Site.toggle_slide();
       App.Site.semaintic();
       App.Site.owl();
       App.Site.fancybox();
@@ -12,11 +12,13 @@ jQuery(document).ready(function ($) {
 
   //--All site
     App.Site = function(){
-        var playvideo = function(){
-            // $("#playvideo").click(function(){
-            //     $("#video1")[0].src += "?autoplay=1";
-            //     $(".md-displaynone").addClass("md-hide");
-            // });
+        var toggle_slide = function(){
+            $('.page-header .toggle-slide').click(function(){
+              $('.page-header .main-menu').addClass('active');
+            });
+            $('.page-header .close-slide').click(function(){
+              $('.page-header .main-menu').removeClass('active');
+            });
         }
         var semaintic = function(){
             
@@ -30,28 +32,48 @@ jQuery(document).ready(function ($) {
                 loop:true,
                 margin:20,
                 nav:true,
+                stagePadding: 100,
                 autoplay:true,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            });
+            $('.section-2 .owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:false,
+                dots:false,
+                autoplay:true,
+                autoplayHoverPause:true,
                 responsive:{
                     0:{
                         items:1.2
                     },
                     600:{
-                        items:2.2
+                        items:1.
                     },
                     1000:{
-                        items:4.2
+                        items:1.2
                     }
                 }
             })
         }
         var fancybox = function(){
             // $("#modal-sucess-form").fancybox().trigger('click');
-             // $("#modal-sucess-form-2").fancybox().trigger('click');
         }
 
 
         return{
-            playvideo:playvideo,
+            toggle_slide:toggle_slide,
             semaintic:semaintic,
             owl:owl,
             fancybox:fancybox,

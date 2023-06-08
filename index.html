@@ -9,207 +9,333 @@
     <link href="vendor/wow/animation.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/fancybox/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/semantic/semantic.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" media="screen">
-	<link rel="apple-touch-icon" sizes="180x180" href="./images/fav/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/fav/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./images/fav/favicon-16x16.png">
-	<link rel="manifest" href="./images/fav/site.webmanifest">
-	<meta property="og:title" content="PyCOM DMS - Giải pháp quản lý kênh phân phối bán hàng" />
-	<meta property="og:image" content="https://bizzon-vn.github.io/pycom-dms/images/og-image.png" />
-	<meta property="og:description" content="Quản lý hầu hết các nghiệp vụ của một DMS, báo cáo thống kê thời gian thực." />
 
 </head>
 <body>
+    <div class="page-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.png" alt=""></a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li><a href="#" class="md-mobile"><img src="./images/logo.png" alt=""></a></li>
+                    <li class="active"><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Vấn đề</a></li>
+                    <li><a href="#">Giải pháp</a></li>
+                    <li><a href="#">Quy trình</a></li>
+                    <li><a href="#">Đăng ký trải nghiệm</a></li>
+                </ul>
+                <div class="close-slide">
+                    <img src="./images/ico-close.png" alt="">
+                </div>
+            </div>
+            <div class="toggle-slide">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
    <div class="banner">
        <!--  <img src="./images/bg.png" alt="" class="bg-banner"> -->
        <div class="container clearfix">
-            <div class="logo-banner">
-                <a href="#"><img src="./images/logo-v1-nobackground.png" alt=""></a>
-            </div>
            <div class="left-banner">
-               <h1>DMS By PyCOM - PHẦN MỀM QUẢN LÝ <span>KÊNH PHÂN PHỐI BÁN HÀNG</span></h1>              
-			   <div class="md-list clearfix"><img src="./images/bullet2.png" alt=""><p><span class="font-bold">Công nghệ tiên tiến, dễ dàng sử dụng, bảo mật, linh hoạt trên mọi thiết bị</span> Hệ thống được customize cho từng yêu cầu của doanh nghiệp.</p></div>
-			   <div class="md-list clearfix"><img src="./images/bullet2.png" alt=""><p><span class="font-bold">Quản lý hầu hết các nghiệp vụ của một DMS</span> báo cáo thống kê thời gian thực, giúp doanh nghiệp nhanh chóng đưa ra các quyết định kinh doanh phù hợp.</p></div>
-			   <div class="md-list clearfix"><img src="./images/bullet2.png" alt=""><p><span class="font-bold">Có thể tích hợp với các hệ thống khác có sẵn của doanh nghiệp</span> tạo một bảng điều khiển & quản lý hoàn chỉnh cho tất cả các nghiệp vụ phân phối & bán hàng.</p></div>		
-               <div class="the-le-desktop clearfix">
-                   <a href="#" class="the-le ctn-button " data-fancybox="" data-src="#md-formdk" href="javascript:;">ĐĂNG KÝ TƯ VẤN & DEMO</a>
-                   <a href="./download/pycom-dms.html" target="_blank" class="taiungdung">TẢI ỨNG DỤNG</a>
-               </div>				   
-               
-               <div id="md-formdk" class="md-formdk">
-                   <form action="" class="md-form">
-                       <h6>ĐĂNG KÝ NHẬN TƯ VẤN</h6>
-                       <div class="md-col">
-                           <input type="text" placeholder="Họ và tên">
-                           <!-- <p class="error">Vui lòng nhập họ tên</p> -->
-                       </div>
-                       <div class="md-col">
-                           <input type="email" placeholder="Email của bạn">
-                           <!-- <p class="error">Vui lòng nhập email</p> -->
-                       </div>
-                       <div class="md-col">
-                           <input type="tel" placeholder="Nhập Số điện thoại">
-                           <!-- <p class="error">Vui lòng nhập số điện thoại</p> -->
-                       </div>
-                       <div class="md-col">
-                           <input type="text" placeholder="Tên công ty">
-                           <!-- <p class="error">Vui lòng nhập tên công ty</p> -->
-                       </div>
-
-                       <div class="ui dropdown">
-                            <input type="hidden" name="gender">
-                            <i class="dropdown icon"></i>
-                            <div class="default text">Quy mô công ty</div>
-                            <div class="menu">
-                               <div class="item" data-value="1-20 Nhân sự">1-20 Nhân sự</div>
-                               <div class="item" data-value="21-30 Nhân sự">21-30 Nhân sự</div>
-                               <div class="item" data-value="31-50 Nhân sự">31-50 Nhân sự</div>
-                               <div class="item" data-value="51-100 Nhân sự">51-100 Nhân sự</div>
-                               <div class="item" data-value="101-200 Nhân sự">101-200 Nhân sự</div>
-                               <div class="item" data-value="101-200 Nhân sự">101-200 Nhân sự</div>
-                            </div>
-                       </div>
-                       <input type="button" value="ĐĂNG KÝ TƯ VẤN">
-                   </form>
-                   <div id="modal-sucess-form" class="md-modal-fancybox">
-                       <h3>HOÀN TẤT!</h3>
-                       <p>Cám ơn bạn đã đăng ký tư vấn, chúng tôi sẽ liên hệ lại với bạn</p>                      
-                   </div>
-               </div>               
+               <h1>DMS By PyCOM <span>Phần mềm quản lý kênh phân phối bán hàng</span></h1>              
+			   <div class="md-list clearfix"><img src="./images/bullet2.png" alt=""><p>Công nghệ tiên tiến, dễ dàng sử dụng, bảo mật, linh hoạt trên mọi thiết bị. Hệ thống được customize cho từng yêu cầu của doanh nghiệp.</p></div>
+			   <div class="md-list clearfix"><img src="./images/bullet2.png" alt=""><p>Quản lý hầu hết các nghiệp vụ của một DMS báo cáo thống kê thời gian thực, giúp doanh nghiệp nhanh chóng đưa ra các quyết định kinh doanh phù hợp.</p></div>
+			   <div class="md-list clearfix"><img src="./images/bullet2.png" alt=""><p>Có thể tích hợp với các hệ thống khác có sẵn của doanh nghiệp tạo một bảng điều khiển & quản lý hoàn chỉnh cho tất cả các nghiệp vụ phân phối & bán hàng.</p></div>				   
+                           
            </div>
-           <div class="right-banner">
-               
+           <div class="right-banner">             
                <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/gYLaU_nWZPY" title="Demo tính năng Quản lý nhân viên bán hàng ngoài thị trường" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video-blk-dt" id="video1"></iframe>
            </div>
-           <div class="the-le-mobile">
-               <a href="#" class="the-le ctn-button " data-fancybox="" data-src="#md-formdk" href="javascript:;">ĐĂNG KÝ TƯ VẤN & DEMO</a>
-               <a href="#" class="taiungdung">TẢI ỨNG DỤNG</a>
+           <div class="btn-timhieungay">
+               <a href="#">Tìm hiểu ngay</a>
            </div>
        </div>
    </div>
    <div class="section-1">
        <div class="container">
            <div class="md-title">
-               <h4>CÁC VẤN ĐỀ BẠN ĐANG GẶP PHẢI:</h4>
+               <h4>Các vấn đề bạn đang gặp phải</h4>
            </div>
-           <div class="md-line"></div>
-           <div class="md-content clearfix">
-                <div class="right-content">
-                    <form action="" class="md-form">
-                       <h6>ĐĂNG KÝ NHẬN TƯ VẤN</h6>
-                       <div class="md-col">
-                           <input type="text" placeholder="Họ và tên">
-                           <!-- <p class="error">Vui lòng nhập họ tên</p> -->
+           <div class="md-content">
+               <div class="row">
+                   <div class="col-md-4">
+                       <div class="main-content">
+                           <img src="./images/sc1-img-1.png" alt="">
+                           <p>Vấn đề quản lý nhân viên Sale</p>
+                           <span>Vấn đề giám sát, đánh giá hiệu suất nhân viên Sale khó khăn do thiếu dữ liệu về tiêu chí đánh giá</span>
                        </div>
-                       <div class="md-col">
-                           <input type="email" placeholder="Email của bạn">
-                           <!-- <p class="error">Vui lòng nhập email</p> -->
-                       </div>
-                       <div class="md-col">
-                           <input type="tel" placeholder="Nhập Số điện thoại">
-                           <!-- <p class="error">Vui lòng nhập số điện thoại</p> -->
-                       </div>
-                       <div class="md-col">
-                           <input type="text" placeholder="Tên công ty">
-                           <!-- <p class="error">Vui lòng nhập tên công ty</p> -->
-                       </div>
-
-                       <div class="ui dropdown">
-                            <input type="hidden" name="gender">
-                            <i class="dropdown icon"></i>
-                            <div class="default text">Quy mô công ty</div>
-                            <div class="menu">
-                               <div class="item" data-value="1-20 Nhân sự">1-20 Nhân sự</div>
-                               <div class="item" data-value="21-30 Nhân sự">21-30 Nhân sự</div>
-                               <div class="item" data-value="31-50 Nhân sự">31-50 Nhân sự</div>
-                               <div class="item" data-value="51-100 Nhân sự">51-100 Nhân sự</div>
-                               <div class="item" data-value="101-200 Nhân sự">101-200 Nhân sự</div>
-                               <div class="item" data-value="101-200 Nhân sự">101-200 Nhân sự</div>
-                            </div>
-                       </div>
-                       <input type="button" value="ĐĂNG KÝ TƯ VẤN">
-                   </form>
-                   <div id="modal-sucess-form-2" class="md-modal-fancybox">
-                       <h3>HOÀN TẤT!</h3>
-                       <p>Cám ơn bạn đã đăng ký tư vấn, chúng tôi sẽ liên hệ lại với bạn</p>                      
                    </div>
-                </div>
-                <div class="left-content">
-                    <p><img src="./" alt=""><span>Không quản lý được nhân viên:</span> Không nắm được Sales đi đâu? làm gì? Có thực sự viếng thăm chăm sóc các đại lý? Thời gian chăm sóc các đại lý kéo dài bao lâu?</p> 
-					
-                    <p><img src="./" alt=""><span>Xung đột tuyến bán hàng:</span> Phân tuyến bán hàng bằng giấy tờ, sổ sách hoặc những ứng dụng không chuyên dễ xảy ra tình trạng trùng tuyến, trái tuyến</p> 
-                    <p><img src="./" alt=""><span>Dữ liệu quản lý không đồng bộ</span> Báo cáo cần tổng hợp từ nhiều nguồn và không được đồng bộ.</p> 
-                    <p><img src="./" alt=""><span>Không tích hợp được với các hệ thống sẵn có của doanh nghiệp</span> Các hệ thống rời rạc với nhau, không có sự kết nối</p> 
-                    <p><img src="./" alt=""><span>Khó phân bổ sale và theo dõi KPI:</span> Nhân viên đã viếng thăm bao nhiêu điểm bán? Doanh số đạt được bao nhiêu? Số lượng điểm bán đã mở mới? Số lượng đơn hàng trong tháng?</p>       
-                </div>
-               
+                   <div class="col-md-4">
+                       <div class="main-content">
+                           <img src="./images/sc1-img-2.png" alt="">
+                           <p>Vấn đề quản lý nhân viên Sale</p>
+                           <span>Vấn đề giám sát, đánh giá hiệu suất nhân viên Sale khó khăn do thiếu dữ liệu về tiêu chí đánh giá</span>
+                       </div>
+                   </div>
+                   <div class="col-md-4">
+                       <div class="main-content">
+                           <img src="./images/sc1-img-3.png" alt="">
+                           <p>Vấn đề quản lý nhân viên Sale</p>
+                           <span>Vấn đề giám sát, đánh giá hiệu suất nhân viên Sale khó khăn do thiếu dữ liệu về tiêu chí đánh giá</span>
+                       </div>
+                   </div>
+                   <div class="col-md-4">
+                       <div class="main-content">
+                           <img src="./images/sc1-img-4.png" alt="">
+                           <p>Vấn đề quản lý nhân viên Sale</p>
+                           <span>Vấn đề giám sát, đánh giá hiệu suất nhân viên Sale khó khăn do thiếu dữ liệu về tiêu chí đánh giá</span>
+                       </div>
+                   </div>
+                   <div class="col-md-4">
+                       <div class="main-content">
+                           <img src="./images/sc1-img-5.png" alt="">
+                           <p>Vấn đề quản lý nhân viên Sale</p>
+                           <span>Vấn đề giám sát, đánh giá hiệu suất nhân viên Sale khó khăn do thiếu dữ liệu về tiêu chí đánh giá</span>
+                       </div>
+                   </div>
+                   <div class="col-md-4">
+                       <div class="main-content">
+                           <img src="./images/sc1-img-6.png" alt="">
+                           <p>Vấn đề quản lý nhân viên Sale</p>
+                           <span>Vấn đề giám sát, đánh giá hiệu suất nhân viên Sale khó khăn do thiếu dữ liệu về tiêu chí đánh giá</span>
+                       </div>
+                   </div>
+               </div>
            </div>
-           <div class="md-line"></div>
        </div>
    </div>
-   <div class="section-2">
+   <a href="#" class="md-xemgiaiphap">
+       <span>Xem giải pháp cho bạn từ PyCOM</span>
+       <img src="./images/arrow-right.png" alt="">
+   </a>
+   <div class="section-2 clearfix">
+        <img src="./images/bg-sc2.png" alt="" class="bg-sc2 md-desktop">
        <div class="container">
-           <div class="md-title">
-               <h4>GIẢI PHÁP MÀ PyCOM DMS MANG LẠI:</h4>
-           </div>
-           <div class="md-content clearfix">
-                <div class="right-content">
-                    <img src="./images/sc2-img-1.png" alt="">
-                </div>
-                <div class="left-content">
-                   <h6><img src="./" alt="">Quản lý bán hàng</h6>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Quản lý cửa hàng: Thông tin cửa hàng, lịch sử mua hàng, mức độ ưu tiên, định danh khách hàng… </span></p>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Đặt hàng: Quản lý quá trình đặt hàng từ cửa hàng</span></p>
-				   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Quản lý kho hàng: Quản lý tồn kho, nhập kho, xuất kho, kiểm kê kho hàng, vận chuyển hàng hóa.</span></p>
-				      <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Thống kê báo cáo: Báo cáo hoạt động bán hàng, giúp doanh nghiệp đánh giá hiệu quả kinh doanh.</span></p>
-				   
-				   
-                </div>
-               
-           </div>
-           <div class="md-content md-content-1 clearfix">
-
-               <div class="left-content">
-                   <h6><img src="./" alt="">Quản lý nhân viên bán hàng</h6>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Quản lý hoạt động bán hàng: Theo dõi lịch trình gặp gỡ khách hàng, quản lý đơn hàng và các giao dịch bán hàng khác</span></p>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Quản lý hiệu quả bán hàng: Doanh số bán hàng, khách hàng mới, khách hàng trung thành. Ngoài ra, hệ thống DMS còn hỗ trợ quản lý các chương trình khuyến mãi</span></p>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Quản lý hoa hồng và thưởng: Hoa hồng và các khoản thưởng khác cho nhân viên bán hàng</span></p>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Quản lý chính sách và quy định: Chính sách giá bán, chính sách khuyến mãi, chính sách hoa hồng…</span></p>
+           <div class="md-row-1 md-row">
+               <h4>Giải pháp mà PyCOM DMS mang lại cho bạn</h4>
+               <p>Với hơn 10 năm kinh nghiệm trong lĩnh vực phần mềm và giải pháp số hóa. PyCOM sẵn sàng đồng hành cùng doanh nghiệp trong vấn để đưa công nghệ vào tối ưu vận hành và quản lý.</p>
+               <div class="md-row-2 md-row md-mobile">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="md-col-1">                      
+                                <a href="#">
+                                 <img src="./images/sc2-img-1.jpg" alt="">
+                                Quản lý nhân viên Sales bán hàng ngoài thị trường</a>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="md-col-1">                      
+                                <a href="#">
+                                 <img src="./images/sc2-img-1.jpg" alt="">
+                                Quản lý nhân viên Sales bán hàng ngoài thị trường</a>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="md-col-1">                      
+                                <a href="#">
+                                 <img src="./images/sc2-img-1.jpg" alt="">
+                                Quản lý nhân viên Sales bán hàng ngoài thị trường</a>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                                <div class="md-list">
+                                    <img src="./images/tick-circle.png" alt="">
+                                    <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
                </div>
-               <div class="right-content">
-                   <img src="./images/quanlynhanvien22.png" alt="" >
+               <a href="#" class="btn-trainghiem"><span>Đăng ký trải nghiệm</span><img src="./images/arrow-right.png" alt=""></a>
+           </div>
+           <div class="md-row-2 md-row md-desktop">
+               <div class="md-col-1">
+                   
+                   <a href="#">
+                    <img src="./images/sc2-img-1.jpg" alt="">
+                   Quản lý nhân viên Sales bán hàng ngoài thị trường</a>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+               </div>
+               <div class="md-col-1">
+                   
+                   <a href="#">
+                    <img src="./images/sc2-img-1.jpg" alt="">
+                   Quản lý nhân viên Sales bán hàng ngoài thị trường</a>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+               </div>
+               <div class="md-col-1">
+                   
+                   <a href="#">
+                    <img src="./images/sc2-img-1.jpg" alt="">
+                   Quản lý nhân viên Sales bán hàng ngoài thị trường</a>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
                </div>
            </div>
-           <a href="#"  class="ctn-trainghiem the-le ctn-button " data-fancybox="" data-src="#md-formdk" href="javascript:;">ĐĂNG KÝ TRẢI NGHIỆM NGAY</a>
-           <div class="md-content md-content-2 clearfix">
-               <div class="right-content">
-                   <img src="./images/tonkho.png" alt="">
+           <div class="md-row-2 md-row-3 md-row md-desktop">
+               <div class="md-col-1">
+                   
+                   <a href="#">
+                    <img src="./images/sc2-img-1.jpg" alt="">
+                   Quản lý nhân viên Sales bán hàng ngoài thị trường</a>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
                </div>
-               <div class="left-content">
-                   <h6><img src="./" alt="">Quản lý hàng hóa & tồn kho</h6>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Quản lý thông tin hàng hóa: bao gồm tên hàng hóa, mã hàng, giá cả, số lượng, v.v. Ngoài ra, hệ thống DMS còn hỗ trợ quản lý các thông tin khác liên quan đến hàng hóa như thông tin về nhà sản xuất, ngày sản xuất, hạn sử dụng, v.v.</span></p>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Quản lý số lượng tồn kho: bao gồm việc theo dõi số lượng hàng tồn kho tại các kho hàng, kiểm tra số lượng nhập và xuất hàng, tính toán số lượng hàng tồn kho cuối kỳ và cung cấp báo cáo tồn kho cho doanh nghiệp.</span></p>
-               </div>               
-           </div>
-           <div class="md-content md-content-2 md-content-3 clearfix">
-               <div class="right-content">
-                   <img src="./images/baocao.png" alt="">
+               <div class="md-col-1">
+                   
+                   <a href="#">
+                    <img src="./images/sc2-img-1.jpg" alt="">
+                   Quản lý nhân viên Sales bán hàng ngoài thị trường</a>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
                </div>
-               <div class="left-content">
-                   <h6><img src="./" alt="">Báo cáo thống kê đầy đủ & nhanh chóng</h6>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Báo cáo doanh thu: Doanh thu từng sản phẩm, từng kênh bán hàng và từng thời điểm.</span></p>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Báo cáo khách hàng: Theo dõi thông tin về khách hàng, bao gồm số lượng khách hàng, thông tin về khách hàng, doanh số.</span></p>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Báo cáo tồn kho: Theo dõi số lượng hàng tồn kho, số lượng hàng hóa bán ra và số lượng hàng hóa nhập vào kho...</span></p>
-                   <p class="clearfix"><img src="./images/ico-list-2.png" alt=""><span>Báo cáo nhân viên: Theo dõi thông tin về nhân viên, bao gồm số lượng nhân viên, thông tin về năng suất làm việc, số lượng đơn hàng được xử lý.</span></p>
-               </div>               
+               <div class="md-col-1">
+                   
+                   <a href="#">
+                    <img src="./images/sc2-img-1.jpg" alt="">
+                   Quản lý nhân viên Sales bán hàng ngoài thị trường</a>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+                   <div class="md-list">
+                       <img src="./images/tick-circle.png" alt="">
+                       <p>Sắp xếp phân bổ lịch làm việc cho Sale thông qua tuyến bán hàng</p>
+                   </div>
+               </div>
            </div>
-
-           <a href="#"  class="ctn-trainghiem the-le ctn-button " data-fancybox="" data-src="#md-formdk" href="javascript:;">ĐĂNG KÝ TRẢI NGHIỆM NGAY</a>
        </div>
    </div>
    <div class="section-3">
@@ -217,126 +343,170 @@
            <div class="md-title">
                <h4>Ứng dụng PyCOM DMS trên điện thoại, dành cho nhân viên sale đi thị trường</h4>
            </div>
-           <div class="md-content">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="./images/quanlykhachhang.jpg" alt="">
-                        <p>Quản lý khách hàng</p>
-                    </div>
-
-                    <div class="item">
-                        <img src="./images/ghetham.jpg" alt="">
-                        <p>Ghé thăm </p>
-                    </div>
-                    <div class="item">
-                        <img src="./images/khachhang.jpg" alt="">
-                        <p>Khách hàng</p>
-                    </div>
-                    <div class="item">
-                        <img src="./images/nhanvien.jpg" alt="">
-                        <p>Quản lý nhân viên</p>
-                    </div>
-                    <div class="item">
-                        <img src="./images/sanpham.jpg" alt="">
-                        <p>Sản phẩm</p>
-                    </div>
-                    <div class="item">
-                        <img src="./images/thongke.jpg" alt="">
-                        <p>Thống kê</p>
-                    </div>
-                    <div class="item">
-                        <img src="./images/viengtham.jpg" alt="">
-                        <p>Viếng thăm</p>
-                    </div>
+       </div>
+       <div class="md-content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./images/quanlykhachhang.jpg" alt="">
+                    
                 </div>
-           </div>
-           <a href="#"  class="ctn-trainghiem the-le ctn-button " data-fancybox="" data-src="#md-formdk" href="javascript:;">ĐĂNG KÝ TRẢI NGHIỆM NGAY</a>
+
+                <div class="item">
+                    <img src="./images/ghetham.jpg" alt="">
+                    
+                </div>
+                <div class="item">
+                    <img src="./images/khachhang.jpg" alt="">
+                    
+                </div>
+                <div class="item">
+                    <img src="./images/nhanvien.jpg" alt="">
+                    
+                </div>
+                <div class="item">
+                    <img src="./images/sanpham.jpg" alt="">
+                   
+                </div>
+                <div class="item">
+                    <img src="./images/thongke.jpg" alt="">
+                    
+                </div>
+                <div class="item">
+                    <img src="./images/viengtham.jpg" alt="">
+                    
+                </div>
+            </div>
        </div>
    </div>
-
-   <div class="section-5">
+   <div class="section-2 section-4 clearfix">
+        <img src="./images/bg-sc2.png" alt="" class="bg-sc2 md-desktop">
        <div class="container">
-           <div class="md-title">
-               <h4>LỘ TRÌNH TRIỂN KHAI PYCOM DMS & ĐỒNG HÀNH CÙNG KHÁCH HÀNG</h4>
-               <h6>Đội ngũ PyCOM luôn hỗ trợ & đồng hành cùng khách hàng sau khi đã triển khai sử dụng, để hệ thống luôn mang lại hiệu suất cho việc kinh doanh</h6>
+           <div class="md-row-1 md-row">
+               <h4>Quy trình triển khai PyCOM DMS & Đồng hành cùng khách hàng</h4>
+               <a href="#"><span>Đăng ký trải nghiệm</span><img src="./images/arrow-right.png" alt=""></a>
            </div>
-           <div class="md-content clearfix">
-    		    <div class="md-title-trienkhai">
-                   <h4>LỘ TRÌNH TRIỂN KHAI HỆ THỐNG PyCOM DMS</h4> 
-                </div>
-                <div class="main-content">
-                    <div class="row md-row">
-                        <div class="col-md-3 col-6">
-                            <img src="./images/trienkhai/trienkhai-1.png" alt="">
-                            <p>1/ Đánh giá nhu cầu & Phân tích nghiệp vụ</p>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="./images/trienkhai/trienkhai-2.png" alt="">
-                            <p>2/ Cài đặt, cấu hình, lập trình hệ thống, kiểm tra, chạy thử</p>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="./images/trienkhai/trienkhai-3.png" alt="">
-                            <p>3/ Nhập dữ liệu & triển khai thực tế</p>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="./images/trienkhai/trienkhai-4.png" alt="">
-                            <p>4/ Đào tạo sử dụng hệ thống</p>
-                        </div>
-                    </div>
-                </div>
-                <p>Triên khai DMS yêu cầu sự chuẩn bị kỹ lưỡng để đảm bảo hệ thống DMS triển khai thành công và đáp ứng được nhu cầu của doanh nghiệp.</p>
+           <div class="md-row-2 md-row">
+               <div class="md-col-2">
+                   <h6>Quy trình triển khai hệ thống PyCOM DMS</h6>
+                   <p>Triển khai DMS yêu cầu sự chuẩn bị kỹ lưỡng để đảm bảo hệ thống DMS triển khai thành công và đáp ứng được nhu cầu của doanh nghiệp.</p>
+               </div>
+               <div class="md-col-3">
+                   <div class="md-list-2">
+                       <img src="./images/sc4-img-1.png" alt="">
+                       <span>Bước 1</span>
+                       <p>Đánh giá nhu cầu & Phân tích nghiệp vụ</p>
+                   </div>
+                   <div class="md-list-2">
+                       <img src="./images/sc4-img-2.png" alt="">
+                       <span>Bước 2</span>
+                       <p>Cài đặt, cấu hình, lập trình, kiểm tra và chạy thử hệ thống PyCOM DMS</p>
+                   </div>
+                   <div class="md-list-2">
+                       <img src="./images/sc4-img-3.png" alt="">
+                       <span>Bước 3</span>
+                       <p>Nhập dữ liệu & Triển khai thực tế</p>
+                   </div>
+                   <div class="md-list-2">
+                       <img src="./images/sc4-img-4.png" alt="">
+                       <span>Bước 4</span>
+                       <p>Đào tạo sử dụng hệ thống</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <img src="./images/sc3-img-5.jpg" alt="" class="bg-sc4 md-desktop">
+   </div>
+   <div class="section-5">
+       <div class="left-sc5">
+           <img src="./images/bg-sc5.jpg" alt="" class="md-desktop">
+           <div class="container">
+               <div class="md-content">
+                   <p>Đồng hành sau khi triển khai</p>
+                   <span>Đội ngũ PyCOM luôn hỗ trợ & đồng hành cùng khách hàng sau khi đã triển khai sử dụng, để hệ thống luôn mang lại hiệu suất cho việc kinh doanh.</span>
+               </div>
+           </div>
+       </div>
+       <div class="right-sc5">
+           <div class="container">
+               <div class="md-col">
+                   <img src="./images/sc5-img-1.png" alt="">
+                   <p>Hỗ trợ trong suốt quá trình sử dụng, bảo trì & xử lý các vấn đề của hệ thống</p>
+               </div>
+               <div class="md-col">
+                   <img src="./images/sc5-img-2.png" alt="">
+                   <p>Tư vấn & triển khai các giải pháp công nghệ tạo hiệu quả cho việc kinh doanh</p>
+               </div>
+               <div class="md-col">
+                   <img src="./images/sc5-img-3.png" alt="">
+                   <p>Đồng hành xuyên suốt cùng khách hàng, mang lại hiệu suất kinh doanh & tăng trưởng</p>
+               </div>
+           </div>
+           <img src="./images/bg-sc5.jpg" alt="" class="md-mobile">
+       </div>
 
+   </div>
+   <div class="section-6 clearfix">
+       <div class="container">
+           <div class="left-sc6">
+               <h4>Đăng ký nhận tư vấn miễn phí và trải nghiệm PyCOM</h4>
            </div>
-           <div class="md-content clearfix">
-                <div class="md-title-trienkhai">
-                   <h4>SAU KHI TRIỂN KHAI </h4> 
-                </div>
-                <div class="main-content">
-                    <p>Đội ngũ PyCOM luôn <span>hỗ trợ & đồng hành cùng khách hàng sau khi đã triển khai sử dụng</span>, để hệ thống luôn mang lại hiệu suất cho việc kinh doanh.</p>
-                    <div class="row md-row">
-                        <div class="col-md-4 col-6">
-                            <img src="./images/trienkhai/hotro-1.png" alt="">
-                            <p>Hỗ trợ trong suốt quá trình sử dụng, bảo trì & xử lý các vấn đề của hệ thống </p>
-                        </div>
-                        <div class="col-md-4 col-6">
-                            <img src="./images/trienkhai/hotro-2.png" alt="">
-                            <p>Tư vấn & triển khai các giải pháp công nghệ tạo hiệu quả cho việc kinh doanh</p>
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <img src="./images/trienkhai/hotro-3.png" alt="">
-                            <p>Đồng hành xuyên suốt cùng khách hàng, mang lại hiệu suất kinh doanh & tăng trưởng</p>
-                        </div>
-                    </div>
-                </div>
+           <div class="right-sc6">
+               <form action="">
+                   <div class="md-col">
+                       <input type="text" placeholder="Họ và tên">
+                       <!-- <p class="error">Vui lòng nhập họ và tên</p> -->
+                   </div>
+                   <div class="md-col">
+                       <input type="email" placeholder="Email">
+                       <!-- <p class="error">Vui lòng nhập email</p> -->
+                   </div>
+                   <div class="md-col">
+                       <input type="tel" placeholder="Số điện thoại">
+                       <!-- <p class="error">Vui lòng nhập số điện thoại</p> -->
+                   </div>
+                   <div class="md-col">
+                       <input type="text" placeholder="Tên công ty">
+                       <!-- <p class="error">Vui lòng nhập tên công ty</p> -->
+                   </div>
+                   <div class="btn-submit"><input type="button" value="Đăng ký trải nghiệm"><img src="./images/arrow-right.png" alt=""></div>
+                   <div id="modal-sucess-form" class="md-modal-fancybox">
+                       <h3>HOÀN TẤT!</h3>
+                       <p>Cám ơn bạn đã đăng ký tư vấn, chúng tôi sẽ liên hệ lại với bạn</p>                      
+                   </div>
+               </form>
            </div>
-           <a href="#"  class="ctn-trainghiem the-le ctn-button " data-fancybox="" data-src="#md-formdk" href="javascript:;">ĐĂNG KÝ TRẢI NGHIỆM NGAY</a>
        </div>
    </div>
    <div class="footer">
-       <div class="bg-footer"></div>
        <div class="container">
            <div class="md-row clearfix">
                <div class="md-col-1">
                    <a href="#"><img src="./images/logo-footer.png" alt=""></a>
+                   <p>Công ty TNHH Công nghệ & Dịch vụ PyCOM</p>
                </div>
                <div class="md-col-2">
-                   <h6>Công ty TNHH Công nghệ & Dịch vụ PyCOM</h6>
-                   <p class="clearfix"><img src="./images/ico-1.png" alt=""><span>Tp HCM</span></p>
-                   <p class="clearfix"><img src="./images/ico-2.png" alt=""><span>Hotline: 0909 123 333</span></p>
-                   <p class="clearfix"><img src="./images/ico-3.png" alt=""><span>Email: info@pycom.vn</span></p>
-                   <p class="clearfix"><img src="./images/ico-4.png" alt=""><span>Website: pycom.vn</span></p>
+                   <p class="clearfix">PyCOM Tower - 120 Song Thao Street, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam</p>
+                   <a href="tel:0909 123 333"><p class="clearfix"><img src="./images/ico-phone.png" alt=""><span>0909 123 333</span></p></a>
+                   <a href="mailto:info@pycom.vn"><p class="clearfix"><img src="./images/ico-mail.png" alt=""><span>info@pycom.vn</span></p></a>
                </div>
                <div class="md-col-3">
-                   <h6>Giới thiệu về PyCOM</h6>
-                   <a href="https://docs.google.com/presentation/d/1R3g76kdyWFkwCVqLdJ1DtqwUg8R17U0ZdgRowZ-sFe8/edit?usp=sharing" target="_blank"class="clearfix"><img src="./images/ico-5.png" alt=""><span>Slide giới thiệu</span></a>
-                   <a href="#" class="clearfix"><img src="./images/ico-6.png" alt=""><span>Bảng giá</span></a>
-                   <a href="#" class="clearfix"><img src="./images/ico-7.png" alt=""><span>Khách hàng</span></a>
-                   <a href="#" class="clearfix"><img src="./images/ico-8.png" alt=""><span>Tải ứng dụng</span></a>
+                    <ul>
+                        <li><a href="https://docs.google.com/presentation/d/1R3g76kdyWFkwCVqLdJ1DtqwUg8R17U0ZdgRowZ-sFe8/edit?usp=sharing" target="_blank"class="clearfix"><img src="./images/ico-5.png" alt=""><span>Slide giới thiệu</span></a></li>
+                        <li><a href="#" class="clearfix"><img src="./images/ico-6.png" alt=""><span>Bảng giá</span></a></li>
+                        <li><a href="#" class="clearfix"><img src="./images/ico-7.png" alt=""><span>Khách hàng</span></a></li>
+                        <li><a href="#" class="clearfix"><img src="./images/ico-8.png" alt=""><span>Tải ứng dụng</span></a></li>
+                    </ul>
+                   
+                   
+                   
+                   
                </div>
            </div>
-           <div class="copy-right">
-               <p>Copyright © 2023 - PyCOM Co., Ltd</p>
-           </div>
+       </div>
+   </div>
+   <div class="copy-right">
+       <div class="container">
+           <p>© 2023 PyCOM Co., Ltd. All Rights Reserved</p>
        </div>
    </div>
 </body>
