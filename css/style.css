@@ -691,6 +691,12 @@ p.error{
     font-weight: 300;
 }
 
+
+@media screen and (min-width: 1600px){
+    .container{
+        max-width: 1500px;
+    }
+}
 @media screen and (max-width: 767px){
     body{
         font-size: calc(12px + 1vw);
