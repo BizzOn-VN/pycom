@@ -8,6 +8,8 @@ jQuery(document).ready(function ($) {
       App.Site.semaintic();
       App.Site.owl();
       App.Site.fancybox();
+      App.Site.scrolltoTop();
+      App.Site.scrollDiv();
   });
 
   //--All site
@@ -70,13 +72,55 @@ jQuery(document).ready(function ($) {
         var fancybox = function(){
             // $("#modal-sucess-form").fancybox().trigger('click');
         }
+        var scrolltoTop = function(){
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= 60) {
+                    $('.page-header').addClass('scroll-top');
+                    $('.page-header .toggle-slide').addClass('scroll-top-mb');
+                }
+                else {
+                    $('.page-header').removeClass('scroll-top');
+                    $('.page-header .toggle-slide').addClass('scroll-top-mb');
+                }                 
+            });
 
+        }
+
+        var scrollDiv = function(){
+            $("#btn-home").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#btn-home")
+                }, 1000);
+            });
+            $("#btn-sc1").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#section-1").offset().top - 100
+                }, 1000);
+            });
+            $("#btn-sc2").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#section-2").offset().top - 100
+                }, 1000);
+            });
+            $("#btn-sc3").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#section-4").offset().top - 100
+                }, 1000);
+            });
+            $("#btn-sc4").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#section-6").offset().top - 100
+                }, 1000);
+            });
+        }
 
         return{
             toggle_slide:toggle_slide,
             semaintic:semaintic,
             owl:owl,
             fancybox:fancybox,
+            scrolltoTop:scrolltoTop,
+            scrollDiv:scrollDiv,
         };
 
     }(); 
@@ -87,5 +131,7 @@ jQuery(document).ready(function ($) {
     
    
 });    
+
+
 
 
