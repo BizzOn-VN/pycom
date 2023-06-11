@@ -451,24 +451,25 @@
                <h4>Đăng ký nhận tư vấn miễn phí và trải nghiệm PyCOM</h4>
            </div>
            <div class="right-sc6">
-               <form action="">
+               <form id="registerForm" action="">
                    <div class="md-col">
-                       <input type="text" placeholder="Họ và tên">
+                       <input type="text" name="name" placeholder="Họ và tên">
                        <!-- <p class="error">Vui lòng nhập họ và tên</p> -->
                    </div>
                    <div class="md-col">
-                       <input type="email" placeholder="Email">
+                       <input type="email" name="email" placeholder="Email">
                        <!-- <p class="error">Vui lòng nhập email</p> -->
                    </div>
                    <div class="md-col">
-                       <input type="tel" placeholder="Số điện thoại">
+                       <input type="tel" name="phone" placeholder="Số điện thoại">
                        <!-- <p class="error">Vui lòng nhập số điện thoại</p> -->
                    </div>
                    <div class="md-col">
-                       <input type="text" placeholder="Tên công ty">
+                       <input type="text" name="company" placeholder="Tên công ty">
                        <!-- <p class="error">Vui lòng nhập tên công ty</p> -->
                    </div>
-                   <div class="btn-submit"><input type="button" value="Đăng ký trải nghiệm"><img src="./images/arrow-right.png" alt=""></div>
+                   <input name="Date" type="hidden" id="current-date" value="" />
+                   <div class="btn-submit"><input onclick="App.Site.registerSubmit();" type="button" value="Đăng ký trải nghiệm"><img src="./images/arrow-right.png" alt=""></div>
                    <div id="modal-sucess-form" class="md-modal-fancybox">
                        <h3>HOÀN TẤT!</h3>
                        <p>Cám ơn bạn đã đăng ký tư vấn, chúng tôi sẽ liên hệ lại với bạn</p>                      
@@ -517,5 +518,6 @@
 <script src="vendor/fancybox/jquery.fancybox.min.js" type="text/javascript" ></script>
 <!-- <script src="vendor/semantic/semantic.js" type="text/javascript" ></script> -->
 <script src="vendor/semantic/semantic.min.js" type="text/javascript" ></script>
+<script src="scripts/jquery.validate.js"></script>
 <script src="scripts/main.js"></script>
 </html>
