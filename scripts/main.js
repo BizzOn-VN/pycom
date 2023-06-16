@@ -11,6 +11,8 @@
 
       //
       App.Site.submitValidate();
+      App.Site.getHeight();
+      App.Site.getbootrap();
   });
 
   //--All site
@@ -66,6 +68,23 @@
                     },
                     1000:{
                         items:1.2
+                    }
+                }
+            });
+            $('.page-tms .section-3-tms .owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                dots:false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
                     }
                 }
             })
@@ -247,6 +266,45 @@
             $('#current-date').val(today);
         }
 
+        var getHeight = function(){
+            $('.banner-tms .md-content .col-md-4 p').height(h3height); 
+              var h3height = 0;
+                  $('.banner-tms .md-content .col-md-4 p').each(function() {
+                      if(h3height < $(this).height()){
+                        h3height = $(this).height();
+                      };
+                  });
+              $('.banner-tms .md-content .col-md-4 p').height(h3height); 
+              var onresize = function() {
+                 $('.banner-tms .md-content .col-md-4 p').css("height","auto");
+                         var h3height = 0;
+                         $('.banner-tms .md-content .col-md-4 p').each(function() {
+                             if(h3height < $(this).height()){
+                               h3height = $(this).height();
+                             };
+                         });
+                         $('.banner-tms .md-content .col-md-4 p').height(h3height);
+                 };
+              window.addEventListener("resize", onresize);
+        }
+        var getbootrap = function(){
+
+            $(".md-nav-tab-1 .item span").click(function(){
+               var cc_Sd = $(this).attr("data-href");
+               $(".md-nav-tab-1 .item span").removeClass("active");
+               $(this).addClass("active");
+               $(".md-content-tab-1").removeClass("active");
+               $(cc_Sd).addClass("active");
+            });
+            $(".smd-nav-control-1 span").click(function(){
+                var sc89_jh= $(this).attr("data-href");
+                $(".md-navbar-1 .tab-pane").removeClass('active');
+                $(sc89_jh).addClass("active");
+            });
+
+
+        }
+
         return{
             toggle_slide: toggle_slide,
             semaintic: semaintic,
@@ -255,12 +313,15 @@
             scrolltoTop: scrolltoTop,
             scrollDiv: scrollDiv,
             submitValidate:submitValidate,
-            registerSubmit: registerSubmit
+            registerSubmit: registerSubmit,
+            getHeight: getHeight,
+            getbootrap: getbootrap,
         };
 
     }(); 
 
   //--End All site
+
 
 
 
