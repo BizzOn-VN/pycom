@@ -1,5 +1,6 @@
 .page-tms .page-header .main-menu{
 	padding-left: 30%;
+	background: #011250;
 }
 .page-tms .page-header{
 	background: none;
@@ -323,5 +324,8 @@
 	}
 	.page-tms .section-3-tms .btn-trainghiem{
 		width: 100%;
+	}
+	.page-tms .page-header .main-menu{
+		padding-left: 20px;
 	}
 }

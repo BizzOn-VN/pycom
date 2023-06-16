@@ -132,6 +132,21 @@
                     scrollTop: $("#section-6").offset().top - 100
                 }, 1000);
             });
+            $("#btn-tms-sc1").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#tms-sc1").offset().top - 100
+                }, 1000);
+            });
+            $("#btn-tms-sc2").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#tms-sc2").offset().top - 100
+                }, 1000);
+            });
+            $("#btn-tms-sc4").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#tms-sc4").offset().top - 100
+                }, 1000);
+            });
         }
 
         // a Dong
