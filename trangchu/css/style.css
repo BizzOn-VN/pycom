@@ -3242,7 +3242,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
     }
 }
 
-.nav-link:focus, .nav-link:hover{
+.main-menu .nav-link:focus, .main-menu .nav-link:hover{
     color: #FFF;
     opacity: 1;
 }
